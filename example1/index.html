@@ -1,0 +1,38 @@
+<!-- https://www.w3schools.com/tags/tag_doctype.asp -->
+<!-- All HTML documents must start with a <!DOCTYPE> declaration.
+The declaration is not an HTML tag. It is an "information" to the browser about what document type to expect. 
+Tells browser which html type website is using. Thanks to that it will render website
+using the same html version.
+Document Type Declaration. 
+
+html 5: <!DOCTYPE html>
+html 4: <!DOCTYPE HTML PUBLIC "-//W3C//DTD..">
+html 3: <!DOCTYPE html PUBLIC "...">
+
+PUBLIC: Is identifier a publicly accessible object or system (SYSTEM)
+W3C: Owner ID
+-->
+<!DOCTYPE html>
+<html>
+	<!-- Head is used to add additional information about document.
+	Meta information, title, internal style etc. It is not 
+	required but it is recommended. -->
+	<head>
+		<meta charset="utf-8">
+		<title>S1 - Lecture 2 - Example 1</title>
+		<style>
+			body { margin: 0; }
+		</style>
+	</head>
+	<body>
+		<script type="importmap">
+			{
+				"imports": {
+				  "three": "https://unpkg.com/three@0.147.0/build/three.module.js",
+				  "three/addons/": "https://unpkg.com/three@0.147.0/examples/jsm/"
+				}
+			  }
+		  </script>
+        <script type="module" src="./script.js"></script>
+	</body>
+</html>
