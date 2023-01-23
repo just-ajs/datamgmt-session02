@@ -6,6 +6,10 @@ import * as THREE from 'three'
 
 // create a scene and a camera
 const scene = new THREE.Scene()
+
+// Camera
+// Arguments: field of view, aspect ratio, near plane, far plane
+// They define View Frustum. Frustum means a pyramide with top chopped of. 
 const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 )
 camera.position.z = 30
 

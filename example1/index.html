@@ -18,6 +18,13 @@ W3C: Owner ID
 	Meta information, title, internal style etc. It is not 
 	required but it is recommended. -->
 	<head>
+		<!-- https://www.w3schools.com/TAGs/att_meta_charset.asp -->
+		<!-- Character encoding, utf-8 covers almost all of the characters
+		and symbols in the world. -->
+		<!-- UTF-8 Unicode Transformation Format - 8 bits -->
+		<!-- ASCII has one encoding strategy and covers only 128 characters. -->
+		<!-- UTF-32 not space efficient -->
+		<!-- UTF-8 before 2 to 4 bytes. It is also integrated with ASCII.  -->
 		<meta charset="utf-8">
 		<title>S1 - Lecture 2 - Example 1</title>
 		<style>
@@ -25,6 +32,10 @@ W3C: Owner ID
 		</style>
 	</head>
 	<body>
+		<!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script/type/importmap -->
+		<!-- Indicates that body of the script element contains imports.
+		Importmap is a JSON object that allows developers to control how browser
+		resolves module. It is a mapping between text and value. -->
 		<script type="importmap">
 			{
 				"imports": {
